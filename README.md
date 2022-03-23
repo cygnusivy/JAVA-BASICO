@@ -87,7 +87,7 @@ System.out.prinln(numero1/numero2);
 
 ## Tipo primitivo para manipular caracteres:
 
-#### 1. char - Aceita a inserção de apenas um caractere. Por ser uma variável do tipo numérico, no fundo ela é um inteiro que possui sua respectiva representação no formato de caractere. Veja o exemplo abaixo:
+#### 1. `char`  - Aceita a inserção de apenas um caractere. Por ser uma variável do tipo numérico, no fundo ela é um inteiro que possui sua respectiva representação no formato de caractere. Veja o exemplo abaixo:
 
 ```
 public class Numero{
