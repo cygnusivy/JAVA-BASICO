@@ -3,7 +3,7 @@
 #### Antes de iniciar destacando os tipos de variáveis que podemos utilizar com o Java, é importante entender o que é uma variável. Uma **variável** nada mais é do que uma estrutura ou declaração que permite armazenar dados na memória durante a execução de um programa. No Java, para que uma variável possa ser utilizada no código é importante que eles sejam primeiramente declaradas, ou seja, criadas dentro do programa, elas passam a existir.
 #### Vale ressaltar que a linguagem Java é fortemente tipada, ou seja, é imprenscindível que a variável seja declarada antes de ser utilizada. Além disso, uma vez declarada uma variável para um dado tipo de dado, só será possível atribuir valores deste dipo à variável, a não ser que sejam utilizados métodos de conversão de tipos. 
 
-#### Em Java, o nome da variável não pode ser declarado de qualquer forma e deve respeitar algumas regras básicas de formatação, como:
+## Em Java, o nome da variável não pode ser declarado de qualquer forma e deve respeitar algumas regras básicas de formatação, como:
 #### 1. Conter apenas letras, underline( _ ), sifrão( $ ) ou números de 0 a 9;
 #### 2. Deve ser iniciada por uma letra(geralmente minúscula, por convensão), underline ou $;
 #### 3. Não deve haver espaço no nome da variável;
