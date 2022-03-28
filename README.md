@@ -13,7 +13,7 @@
 #### Obs: Por convenção, variáveis com nomes compostos são iniciadas com letra minúscula e as letras iniciais dos demais nomes são representadas como maiúsculas. Vale ressaltar que o Java é case sensitive --> diferencia as letras minúsculas das maiúsculas. Ou seja, a variável `nome` é diferente da variável `Nome`.
 
 ## Exemplos válidos par nomes de variáveis;
-#### 1. `nome, `_nome ou nome_1`
+#### 1. `nome` `_nome ou nome_1`
 #### 2. `preco$`
 #### 3. `nomeDoMeio`, `_1PrimeiroNome`
 
