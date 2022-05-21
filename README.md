@@ -34,6 +34,12 @@ tipo nomeDaVariavel = valorDaVariavel;
 #### Ambos os casos descritos acima podem ser utilizados na declaração de variáveis no java, a diferença é que no primeiro caso não foi necessário atribuir um valor a variável, diferentemente do segundo exemplo, onde um valor foi atribuído à variável. 
 
 #### Em Java há dois tipos de dados, os que são representados por valor (tipos primitivos) e os que são representados por referência (tipos por referência). De modo geral, podemos destacar 8 tipos primitivos da linguagem java: `byte`, `short`, `int`, `long`, `char`, `float`, `double` e `boolean`. Estes constituem declarações ou informações que a própria linguagem possui implementada em sua definição. Já os tipos por referência são utilizados pelo programa para armazenar as informações de dado objeto na memória do computador, por referência. `String` é a variável de referência mais conhecida do Java, e assim como todas as outras variáveis de referência, ela deriva na classe `Object`. De modo geral, uma variável do tipo primitivo armazena um valor, ao passo que uma variável do tipo referência apontam para um local na memória do computador onde a informação declarada foi guardada.
+#### `String` na verdade é uma classe (começa com letra maiúscula) e deriva do pacote `java.lang`, o único pacote que não precisa ser importado. Assim como `String`, `System`, `RunTimeException`, `Exception`, `NullPointerException`, entre outros, são derivados desse pacote. Contudo, mesmo sendo uma classe, na instanciação de um objeto do tipo `String` não é necessário utilizar a palavra reservada `new`, embora a máquina virtual entenda dessa forma também -> `String nome;` <- indicado | `String nome = new String();` <- funciona, mas não é indicado. 
+#### Vale ressaltar também que `String` é uma classe imutável, ou seja, uma vez declarada não é possível alterá-la. Para que isso seja possível, será necessário criar outro objeto do tipo `String` onde as alterações serão refletidas com base no novo objeto que será instanciado a partir do anterior, como podemos ver no exemplo abaixo:
+```
+String nome = "Maria";
+String nomeModificado = nome.replace("a", "o");
+```
 
 ## Tipos primitivos utilizados para manipular números inteiros:
 
