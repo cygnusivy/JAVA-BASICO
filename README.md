@@ -132,6 +132,51 @@ Integer i = Integer.valueOf(2);
 ```
 #### Você está criando uma classe, que "envolve" o número 2 (primitivo) e adiciona métodos como intValue() nele. Você ainda ganha a funcionalidade de trabalhar com o número 2 como se ele fosse um objeto.  O Java (a partir da versão 5) é inteligente o suficiente para criar ou desfazer wrappers de tipo primitivo automaticamente (Autoboxing), de tão útil e comum que é essa prática, veremos mais a diante como funciona o Autoboxing.
 
-#### Vale ressaltar que todos os wrappers são derivados do pacote `java.lang`, não sendo necessário sua importação.
+#### Vale ressaltar que todos os wrappers são derivados do pacote `java.lang`, não sendo necessário sua importação nem instanciação por meio da palavra reservada `new`, embora o sua implementação funcione. Os wrappers numéricos derivam do pacote `java.lang.Number`, ao passo que `Character` e `Boolean` estende java.
+
+## Formas de converção primitivo -> Wrapper | Wrapper -> primitivo | String -> primitivo | String -> Wrapper
+
+### primitivo -> Wrapper 
+
+```
+// deprecated
+Double d = new Double(5.5);
+Integer i = new Integer(14);
+
+// usual e indicado
+Double d = Double.valueOf(5.5);
+Double d = 5.5;
+Integer i = Integer.valueOf(14);
+Integer i = 14;
+```
+### Wrapper -> primitivo
+
+```
+double d = Double.valueOf(5.5)
+int i = Integer.valueOf(14);
+
+// ou a partir de um wrapper x já instanciado
+double d = x.doubleValue();
+int i = x.intValue();
+```
+### `String` -> primitivo
+
+```
+// converte a String "9" em um primitivo int
+int i = Integer.valueOf("9");
+double d = Double.valueOf("8.8");
+```
+### `String` -> Wrapper
+
+```
+// converte a String "85.4" em um objeto Double
+Double d = Double.valueOf("85.4");
+Integer i = Integer.valueOf(5);
+
+//ou
+// converte a String "78.4" em um objeto Double
+Double d = Double.parseDouble("78.4");
+Integer i = Integer.parseInt("19");
+```
 
 #### OBS: Embora os wrappers possuam uma infinidade de métodos associados, utilizar tipos primitivos é mais vantajoso no que diz respeito ao consumo de memória e eficiência na execução do código. 
