@@ -110,3 +110,28 @@ System.out.prinln(letra2);
 ```
 #### Como foi mensionado anteriormente, um `char` é um `int` por debaixo dos panos. Ao rodar o código acima o console não irá mostrar `B`e `66`, e sim, `B` e `B`, pois a letra B é representada pelo número interiro 66, o Java faz a converção automaticamente. 
 
+# Wrapper
+#### Wrapper são são objetos -> tendo como principal função “envolver coisas” adicionando funcionalidades à ela. O Java conta com diversos Wrappers que adicionam funcionalidades a outras classes ou tipos primitivos, um exemplo dele é o Integer, que é o Wrapper do tipo primitivo int. Que tipo de funcionalidade você pode executar tendo apenas uma variável definida como “int”? Nenhuma, a não ser atribuir valores, pois int é um tipo primitivo e não possuí métodos.
+
+#### O Java possui oito wrappers para tipos primitivos que adicionam a funcionalidade de tratar tipos primitivos como classes.
+
+### Tipos primitivos e seus respectivos Wrappers:
+
+#### --> int = Integer
+#### --> double = Double
+#### --> long = Long
+#### --> short = Short
+#### --> floar = Float
+#### --> byte = Byte
+#### --> char = Character
+#### --> boolean = Boolean
+
+#### Quando você faz um:
+```
+Integer i = Integer.valueOf(2);
+```
+#### Você está criando uma classe, que "envolve" o número 2 (primitivo) e adiciona métodos como intValue() nele. Você ainda ganha a funcionalidade de trabalhar com o número 2 como se ele fosse um objeto.  O Java (a partir da versão 5) é inteligente o suficiente para criar ou desfazer wrappers de tipo primitivo automaticamente (Autoboxing), de tão útil e comum que é essa prática, veremos mais a diante como funciona o Autoboxing.
+
+#### Vale ressaltar que todos os wrappers são derivados do pacote `java.lang`, não sendo necessário sua importação.
+
+#### OBS: Embora os wrappers possuam uma infinidade de métodos associados, utilizar tipos primitivos é mais vantajoso no que diz respeito ao consumo de memória e eficiência na execução do código. 
